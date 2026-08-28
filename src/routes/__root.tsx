@@ -60,6 +60,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           >
             Try again
           </button>
+          
           <a
             href="/"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
@@ -78,15 +79,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { name: "description", content: "Pixel Perfect Clone recreates websites with extreme visual and functional accuracy." },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:description", content: "Pixel Perfect Clone recreates websites with extreme visual and functional accuracy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:description", content: "Pixel Perfect Clone recreates websites with extreme visual and functional accuracy." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d585427e-dc4f-403c-8b6f-eb974180d76c/id-preview-f2558633--be7ee881-3b53-4816-91c1-b4d995a49488.lovable.app-1785005595719.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d585427e-dc4f-403c-8b6f-eb974180d76c/id-preview-f2558633--be7ee881-3b53-4816-91c1-b4d995a49488.lovable.app-1785005595719.png" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&family=Cormorant:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Playfair+Display:ital,wght@1,500;1,600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Markazi+Text:wght@400;500;600&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
