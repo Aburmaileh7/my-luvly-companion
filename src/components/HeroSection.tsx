@@ -81,6 +81,20 @@ export function HeroSection() {
               alt={t("coupleNames")}
               className="pointer-events-none absolute inset-0 z-0 h-full w-full select-none object-contain"
             />
+            <img
+              src={groomAsset.url}
+              alt={t("groomPhotoAlt")}
+              draggable={false}
+              className="pointer-events-none absolute inset-0 z-10 h-full w-full origin-center translate-x-[0.5%] translate-y-[4.2%] scale-x-[1.30] scale-y-[1.26] select-none object-cover"
+              style={{
+                WebkitMaskImage: `url(${heroOvalMaskAsset.url})`,
+                maskImage: `url(${heroOvalMaskAsset.url})`,
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+              }}
+            />
             <ScratchCard
               maskSrc={heroOvalMaskAsset.url}
               glitter
