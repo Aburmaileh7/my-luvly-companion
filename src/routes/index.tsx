@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { EnvelopeIntro } from "@/components/EnvelopeIntro";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { MusicToggle } from "@/components/MusicToggle";
-import { ScratchScene } from "@/components/ScratchScene";
+import { WeddingReveal } from "@/components/WeddingReveal";
 import { LanguageProvider } from "@/lib/language";
 
 export const Route = createFileRoute("/")({
@@ -94,7 +94,7 @@ function SaveTheDatePage() {
     <LanguageProvider>
       <LanguageToggle />
       <main className="bg-transparent">
-        <ScratchScene />
+        <WeddingReveal />
         <MusicToggle muted={muted} onToggle={toggleMute} />
         {!entered && (
           <EnvelopeIntro onEnter={() => setEntered(true)} onInteraction={startMusic} />

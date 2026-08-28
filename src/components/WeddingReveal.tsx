@@ -103,7 +103,7 @@ function googleCalendarUrl(names: string, address: string) {
  * The scratch-to-reveal scene: linen background, oval photo frame, tinted
  * vignette layers and the glitter scratch canvas on top.
  */
-export function ScratchScene() {
+export function WeddingReveal() {
   const { t, lang } = useLanguage();
   const namesFontClass = lang === "ar" ? "font-arabic" : "font-names italic";
   const [scratchStarted, setScratchStarted] = useState(false);
