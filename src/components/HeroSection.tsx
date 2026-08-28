@@ -85,7 +85,7 @@ export function HeroSection() {
               src={groomAsset.url}
               alt={t("groomPhotoAlt")}
               draggable={false}
-              className="pointer-events-none absolute inset-0 z-10 h-full w-full origin-center translate-x-[0.5%] translate-y-[4.2%] scale-x-[1.30] scale-y-[1.26] select-none object-cover"
+              className="pointer-events-none absolute inset-0 z-10 h-full w-full origin-center translate-x-[0.5%] translate-y-[4.2%] scale-x-[1.30] scale-y-[1.26] select-none object-cover object-[center_18%]"
               style={{
                 WebkitMaskImage: `url(${heroOvalMaskAsset.url})`,
                 maskImage: `url(${heroOvalMaskAsset.url})`,
