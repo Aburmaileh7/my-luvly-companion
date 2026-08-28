@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "6795b2a1-5f6a-4e70-9fcc-7a5a05c0abd2",
-  "project_id": "be7ee881-3b53-4816-91c1-b4d995a49488",
-  "url": "/__l5e/assets-v1/6795b2a1-5f6a-4e70-9fcc-7a5a05c0abd2/background-music.mp3",
-  "r2_key": "a/v1/be7ee881-3b53-4816-91c1-b4d995a49488/6795b2a1-5f6a-4e70-9fcc-7a5a05c0abd2/background-music.mp3",
+  "asset_id": "2099dcd0-518a-49b2-bd77-80dd2d26def9",
+  "project_id": "db8ec3e6-9343-4eb7-9e8b-674088bdddf6",
+  "url": "/__l5e/assets-v1/2099dcd0-518a-49b2-bd77-80dd2d26def9/background-music.mp3",
+  "r2_key": "a/v1/db8ec3e6-9343-4eb7-9e8b-674088bdddf6/2099dcd0-518a-49b2-bd77-80dd2d26def9/background-music.mp3",
   "original_filename": "background-music.mp3",
   "size": 717778,
   "content_type": "audio/mpeg",
-  "created_at": "2026-08-24T10:54:27Z"
+  "created_at": "2026-08-28T17:01:09Z"
 }
