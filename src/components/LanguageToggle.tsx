@@ -17,10 +17,10 @@ export function LanguageToggle() {
       <span className="text-ink/40">/</span>
       <button
         onClick={() => setLang("ar")}
-        className={`${base} ${lang === "ar" ? "font-semibold text-ink" : "hover:text-ink"}`}
-        aria-label="العربية"
+        className={`${base} ${lang === "ar" ? "font-semibold text-ink" : "hover:text-ink"} font-arabic normal-case`}
+        aria-label="عربي"
       >
-        AR
+        عربي
       </button>
     </div>
   );

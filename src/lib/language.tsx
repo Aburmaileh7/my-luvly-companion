@@ -5,11 +5,12 @@ import { createContext, useContext, useEffect, useState, type Context, type Reac
  */
 export const translations = {
   weGettingMarried: { en: "WE ARE GETTING MARRIED", ar: "حفل زفافنا" },
-  weddingDate: { en: "10.09.26", ar: "10.09.26" },
+  //weddingDate: { en: "10.09.26", ar: "10.09.26" },
+  weddingDate: { en: "10.09.2026", ar: "10.09.2026" },
   openEnvelope: { en: "OPEN ENVELOPE", ar: "افتح الظرف" },
   envelopeAlt: { en: "Envelope with seal", ar: "ظرف مختوم" },
   tapToOpen: { en: "Tap to open", ar: "اضغط للفتح" },
-  scratchToReveal: { en: "Scratch to\nreveal", ar: "اِحكّ\nللكشف" },
+  scratchToReveal: { en: "Scratch to\nreveal", ar: "Scratch to\nreveal" },
   days: { en: "Days", ar: "أيام" },
   hours: { en: "Hours", ar: "ساعات" },
   mins: { en: "Mins", ar: "دقائق" },
@@ -18,7 +19,8 @@ export const translations = {
   countdownTitle: { en: "Counting down", ar: "العد التنازلي" },
 
   // Couple + venue details (translated, replacing the old hardcoded strings)
-  coupleNames: { en: "Omar & His Bride", ar: "عمر و كريمته" },
+  coupleNames: { en: "Omar & Rahaf", ar: "عمر & رهف" },
+  location: { en: "Location", ar: "المكان" },
   venueLabel: { en: "Location", ar: "المكان" },
   venueName: { en: "Al Yousefi Palace", ar: "قصر اليوسفي" },
   venueAddress: { en: "Al-Jubeiha, Yajouz Street, Amman", ar: "الجبيهة، شارع ياجوز، عمّان" },
@@ -27,6 +29,26 @@ export const translations = {
   addToCalendar: { en: "Add to calendar", ar: "أضف إلى التقويم" },
   venueImageAlt: { en: "Al Yousefi Palace - view", ar: "قصر اليوسفي - صورة" },
   mapTitle: { en: "Map of Al Yousefi Palace", ar: "خريطة قصر اليوسفي" },
+  // Day programme
+  dayProgrammeTitle: { en: "Day Programme", ar: "برنامج اليوم" },
+  zaffaGroom: { en: "Groom's Zaffa", ar: "زفة بيت العريس" },
+  zaffaBride: { en: "Bride's Zaffa", ar: "زفة بيت العروس" },
+  ceremonyStart: { en: "Ceremony Begins", ar: "بداية الحفل" },
+  ceremonyEnd: { en: "Ceremony Ends", ar: "نهاية الحفل" },
+  // RSVP form
+  rsvpTitle: { en: "RSVP", ar: "تأكيد الحضور" },
+  rsvpSubtitle: { en: "Kindly respond by 1st September 2026", ar: "نرجو التأكيد قبل 1 أيلول 2026" },
+  rsvpName: { en: "Full Name", ar: "الاسم الكامل" },
+  rsvpAttendance: { en: "Will you be attending?", ar: "هل ستحضر؟" },
+  rsvpYes: { en: "Joyfully accepts", ar: "أقبل بكل سرور" },
+  rsvpNo: { en: "Regretfully declines", ar: "أعتذر" },
+  rsvpMaybe: { en: "Maybe", ar: "ربما" },
+  rsvpGuests: { en: "Number of Guests", ar: "عدد الضيوف" },
+  rsvpDietary: { en: "Dietary Requirements", ar: "متطلبات غذائية" },
+  rsvpMessage: { en: "Message for the Couple", ar: "رسالة للعروسين" },
+  rsvpSubmit: { en: "Send RSVP", ar: "إرسال" },
+  rsvpSuccess: { en: "Thank you! Your response has been received.", ar: "شكراً! تم استلام ردك." },
+  rsvpError: { en: "Something went wrong. Please try again.", ar: "حدث خطأ. حاول مرة أخرى." },
 } as const;
 
 type Key = keyof typeof translations;

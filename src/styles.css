@@ -145,8 +145,17 @@
   font-style: italic;
 }
 
+#lovable-badge {
+  display: none !important;
+}
+
 @utility font-arabic {
   font-family: var(--font-arabic);
+  font-style: normal;
+}
+
+@utility font-arabic-ui {
+  font-family: "Markazi Text", var(--font-arabic);
   font-style: normal;
 }
 
