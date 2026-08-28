@@ -4,36 +4,43 @@ import { useEffect, useRef, useState } from "react";
 import { EnvelopeIntro } from "@/components/EnvelopeIntro";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { MusicToggle } from "@/components/MusicToggle";
-import { WeddingReveal } from "@/components/WeddingReveal";
+import { HeroSection } from "@/components/HeroSection";
+import { SiteSignature } from "@/components/SiteSignature";
 import { LanguageProvider } from "@/lib/language";
+import musicAsset from "@/assets/background-music.mp3.asset.json";
+import ogImageAsset from "@/assets/og-preview.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Save The Date | Clara & Hugo — 15.06.27" },
+      { title: "Save The Date | Omar & ٌRahaf — 10.09.2026" },
       {
         name: "description",
         content:
-          "Scratch the lace card to reveal our wedding announcement: Clara & Hugo, 15.06.27 at Villa Montalcino.",
+          "Scratch the lace card to reveal our wedding announcement: Omar & Rahaf, 10.09.2026 at Al Yousefi Palace, Amman.",
       },
-      { property: "og:title", content: "Save The Date | Clara & Hugo" },
+      { property: "og:title", content: "Save The Date | Omar & Rahaf" },
       {
         property: "og:description",
         content: "Open the envelope and scratch to reveal our save the date.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Save The Date | Clara & Hugo" },
+      { name: "twitter:title", content: "Save The Date | Omar & Rahaf" },
       {
         name: "twitter:description",
         content: "Open the envelope and scratch to reveal our save the date.",
       },
+      { property: "og:image", content: `https://omar-wedding.lovable.app${ogImageAsset.url}` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: `https://omar-wedding.lovable.app${ogImageAsset.url}` },
     ],
   }),
   component: SaveTheDatePage,
 });
 
-const MUSIC_SRC = "/audio/background-music.mp3";
+const MUSIC_SRC = musicAsset.url;
 
 function SaveTheDatePage() {
   const [entered, setEntered] = useState(false);
@@ -94,8 +101,9 @@ function SaveTheDatePage() {
     <LanguageProvider>
       <LanguageToggle />
       <main className="bg-transparent">
-        <WeddingReveal />
+        <HeroSection />
         <MusicToggle muted={muted} onToggle={toggleMute} />
+        <SiteSignature />
         {!entered && (
           <EnvelopeIntro onEnter={() => setEntered(true)} onInteraction={startMusic} />
         )}
