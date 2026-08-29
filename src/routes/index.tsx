@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { EnvelopeIntro } from "@/components/EnvelopeIntro";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { MusicToggle } from "@/components/MusicToggle";
+import { CropAdjuster } from "@/components/CropAdjuster";
 import { HeroSection } from "@/components/HeroSection";
 import { SiteSignature } from "@/components/SiteSignature";
 import { LanguageProvider } from "@/lib/language";
@@ -104,6 +105,7 @@ function SaveTheDatePage() {
         <HeroSection />
         <MusicToggle muted={muted} onToggle={toggleMute} />
         <SiteSignature />
+        <CropAdjuster />
         {!entered && (
           <EnvelopeIntro onEnter={() => setEntered(true)} onInteraction={startMusic} />
         )}
