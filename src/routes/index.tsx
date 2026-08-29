@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
         name: "twitter:description",
         content: "Open the envelope and scratch to reveal our save the date.",
       },
-      { property: "og:image", content: `https://omar-wedding.lovable.app${ogImageAsset.url}` },
+      { property: "og:image", content: `https://omer-card.lovable.app${ogImageAsset.url}` },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:image", content: `https://omar-wedding.lovable.app${ogImageAsset.url}` },
