@@ -10,7 +10,7 @@ import heroFrameAsset from "@/assets/hero-frame.webp.asset.json";
 import heroOvalMaskAsset from "@/assets/hero-oval-mask.png.asset.json";
 import linenTextureAsset from "@/assets/linen-texture.jpg.asset.json";
 import venueAsset from "@/assets/al-yousefi-palace.png.asset.json";
-import groomAsset from "@/assets/groom.jpg.asset.json";
+
 
 const GOLD = ["#e8d9bb", "#dec8a0", "#f0e1c0", "#d6c39a"];
 const CREAM = ["#fcf0d7", "#fff8e8", "#f5e6c2", "#ffffff"];
@@ -80,20 +80,6 @@ export function HeroSection() {
               src={heroFrameAsset.url}
               alt={t("coupleNames")}
               className="pointer-events-none absolute inset-0 z-0 h-full w-full select-none object-contain"
-            />
-            <img
-              src={groomAsset.url}
-              alt={t("groomPhotoAlt")}
-              draggable={false}
-              className="pointer-events-none absolute inset-0 z-10 h-full w-full origin-center translate-x-[0.5%] translate-y-[4.2%] scale-x-[1.30] scale-y-[1.26] select-none object-cover object-[center_18%]"
-              style={{
-                WebkitMaskImage: `url(${heroOvalMaskAsset.url})`,
-                maskImage: `url(${heroOvalMaskAsset.url})`,
-                WebkitMaskSize: "100% 100%",
-                maskSize: "100% 100%",
-                WebkitMaskRepeat: "no-repeat",
-                maskRepeat: "no-repeat",
-              }}
             />
             <ScratchCard
               maskSrc={heroOvalMaskAsset.url}
