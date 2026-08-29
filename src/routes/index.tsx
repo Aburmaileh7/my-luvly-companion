@@ -105,6 +105,7 @@ function SaveTheDatePage() {
         <HeroSection />
         <MusicToggle muted={muted} onToggle={toggleMute} />
         <SiteSignature />
+        <CropAdjuster />
         {!entered && (
           <EnvelopeIntro onEnter={() => setEntered(true)} onInteraction={startMusic} />
         )}
