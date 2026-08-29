@@ -9,7 +9,7 @@ export const translations = {
   weddingDate: { en: "10.09.2026", ar: "10.09.2026" },
   openEnvelope: { en: "OPEN ENVELOPE", ar: "افتح الظرف" },
   envelopeAlt: { en: "Envelope with seal", ar: "ظرف مختوم" },
-  groomPhotoAlt: { en: "The groom, Omar", ar: "العريس عمر" },
+  
   tapToOpen: { en: "Tap to open", ar: "اضغط للفتح" },
   scratchToReveal: { en: "Scratch to\nreveal", ar: "Scratch to\nreveal" },
   days: { en: "Days", ar: "أيام" },
